@@ -1,0 +1,17 @@
+.ErrorPage {
+    width: 100%;
+    height: 100vh;
+}
+
+.ErrorPage div {
+    /* 设置居中(水平 + 垂直) */
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-family:  "Consolas", cursive, serif, sans-serif;
+    font-weight: bold;
+}

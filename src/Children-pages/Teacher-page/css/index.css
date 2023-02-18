@@ -1,0 +1,151 @@
+/* 
+    说明：
+    本css服务于TeacherPage页面，所有class及id都加前缀 teacherPage-
+*/
+
+.TeacherPage {
+    width: 100%;
+    height: 100vh;
+    min-width: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* 上侧 */
+#teacherPage-up {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(35, 55, 93);
+    line-height: 50px;
+    color: white;
+    box-shadow: 0 1px 4px gray;
+}
+
+/* Logo */
+#teacherPage-up div:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: bold;
+    /* border-right: 2px solid rgb(180, 180, 180); */
+    width: 150px;
+    min-width: none;
+    text-align: center;
+    float: left;
+}
+
+/* 用户 */
+#teacherPage-up div:nth-of-type(2) {
+    float: right;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#teacherPage-up div:nth-of-type(2):hover {
+    background-color: rgb(75, 96, 135);
+}
+#teacherPage-up div:nth-of-type(2) svg {
+    height: 100%;
+    float: left;
+    width: 35%;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    fill: #a1acc1;
+    padding: 0 0 0px 10px;
+}
+
+/* 悬浮框(用户信息及退出) */
+#teacherPage-user {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#teacherPage-user div{
+    width: 110px;
+    height: 150px;
+    float: right;
+    margin-right: 2px;
+}
+#teacherPage-user div div{
+    width: 100%;
+    float: right;
+    margin-top: 55px;
+    height: 95px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+}
+#teacherPage-user div div h4{
+    font-weight: bold;
+}
+#teacherPage-user div div button{
+    margin-top: 5px;
+    background-color: rgb(22, 119, 255);
+    border: 0px solid gray;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#teacherPage-user div div button:hover{
+    opacity: 0.8;
+}
+
+/* 下侧 */
+#teacherPage-down {
+    flex: 1 1 auto;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* 下侧左边导航栏 */
+#teacherPage-down-left {
+    width: 150px;
+    height: 100%;
+    flex: 0 0 auto;
+    background-color: rgb(102, 122, 159);
+    /* border-right: 2px solid white; */
+}
+.teacherPage-down-left-item {
+    width: 100%;
+    margin-top: 10px;
+}
+.teacherPage-down-left-item-father {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 10px;
+    color: #30343c;
+    /* width: 100%; */
+    border-bottom: 1px solid rgb(180, 180, 180);
+    /* color: white; */
+}
+.teacherPage-down-left-item-children{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+}
+.teacherPage-down-left-item-children:hover {
+    color: bisque;
+}
+
+.teacherPage-down-left-item-children-click {
+    background-color: rgb(126, 141, 167);
+    color: bisque;
+    border-right: 5px solid bisque;
+}
+
+/* 下侧 右边展示部分 */
+#teacherPage-down-right {
+    flex: 1 1 auto;
+    margin-top: 5px;
+    /* background-color: antiquewhite; */
+}

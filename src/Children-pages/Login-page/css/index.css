@@ -1,0 +1,60 @@
+#login-main-content {
+    height: 300px;
+    width: 450px;
+    border: 2px solid rgb(150, 150, 150);
+    background: #ffffff;
+    border-radius: 3px;
+    /* 阴影 */
+    box-shadow: 0px 0px 8px #888888;
+    /* 设置居中(水平 + 垂直) */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.LoginPage {
+    background: url("https://pic1.zhimg.com/80/v2-540cf3ca28566318de791f1995a8c964_720w.webp?source=1940ef5c") no-repeat center center fixed;
+    /* 兼容浏览器版本 */
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+}
+
+/* 登录框内部组件样式 */
+.login-item {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 登录，注册 按钮 */
+.login-button{
+    text-align: 'center';
+    background-color: rgb(22, 119, 255);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    opacity: 0.9;
+}
+
+/* 身份单选框 */
+.login-radio-item {
+    float: left;
+    margin-left: 9%;
+}
+
+/* 设置所有链接的样式 */
+a {
+    text-decoration-line: none;
+    color: white;
+}

@@ -1,0 +1,142 @@
+/* 
+    说明：
+    本css文件服务于studentpage(学生端)相关页面，所有id以及class都使用 studentpage- 作为前缀
+*/
+.StudentPage {
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+    /* 弹性窗口(要先规定好窗口的大小) */
+    display: flex;
+    /* 纵向排列 */
+    flex-direction: column; 
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+
+/* 上半部分(主要展示导航栏等) */
+#studentpage-up {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.197);
+    background-color: white;
+}
+
+/* 导航栏 */
+.studentpage-Navigation-item {
+    line-height: 50px;
+    height: 100%;
+    float: left;
+    margin: 0 14px;
+    text-align: center;
+    color: #8590a6;
+    cursor: pointer;
+}
+.studentpage-Navigation-item:hover {
+    color: black;
+}
+.studentpage-Navigation-select {
+    color: black;
+    font-weight: 600;
+    border-bottom: 5px solid rgb(26, 115, 232);
+}
+
+/* 用户头像 */
+#studentpage-user {
+    height: 50px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    /* 文字 */
+    line-height: 50px;
+    font-size: 16px;
+    color: #8590a6;
+    font-weight: 600;
+    text-align: center;
+}
+
+#studentpage-user:hover {
+    color: #3b3f47;
+}
+
+#studentpage-user-avatar {
+    height: 100%;
+    float: left;
+    width: 25px;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    fill: #8590a6;
+}
+
+/* 用户退出登录提示框 */
+#studentpage-user-output {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+#studentpage-user-output div {
+    width: 300px;
+    height: 100px;
+    background: white;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    /* 阴影 */
+    box-shadow: 0 0 2px 1px rgb(180, 180, 180); 
+    /* 设置居中(水平 + 垂直) */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#studentpage-user-output div h4 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #8590a6;
+}
+
+#studentpage-user-output div button {
+    margin: 0px 24.3px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* 确定按钮(第一个按钮) */
+.studentpage-user-output-button:nth-of-type(1) {
+    background-color: rgb(22, 119, 255);
+    border: 0px solid gray;
+    color: white;
+}
+
+.studentpage-user-output-button:nth-of-type(1):hover {
+    opacity: 0.8;
+}
+
+/* 取消按钮 */
+.studentpage-user-output-button:nth-of-type(2) {
+    border: 1px solid rgb(180, 180, 180);
+    color: #8590a6;
+}
+
+.studentpage-user-output-button:nth-of-type(2):hover {
+    border: 1px solid rgb(22, 119, 255);
+    color: rgb(22, 119, 255);
+}
+
+/* ---------------------------------------------------- */
+/* 下半部分 */
+#studentpage-down {
+    /* 横向和纵向填充 */
+    flex: 1 1 auto;
+    margin-top: 10px;
+}
+
